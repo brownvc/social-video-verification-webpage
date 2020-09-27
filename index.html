@@ -9,7 +9,9 @@ redirect_from: socialvideoverification/
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <title>Social Video Verification</title>
   </head>
 
@@ -125,15 +127,30 @@ redirect_from: socialvideoverification/
 		<p><b>Download:</b> <a href="https://repository.library.brown.edu/studio/collections/id_1006/">Here from Brown University's library</a>.</p>
 
 		<p>
-			We have captured 25 participants speaking arbitrary sentences from 6 time-synchronized DSLR cameras. Then, these input videos were turned into a set of deep fakes by shuffling the audio around and synthesizing new matching mouth motions via <a href="https://github.com/Rudrabha/LipGAN">LipGAN</a>, We also include facial landmarks processed from both the real and fake videos, which are input to our video matching function codes. 
+			We have captured 24 participants speaking arbitrary sentences from 6 time-synchronized DSLR cameras. Then, these input videos were turned into a set of deep fakes by shuffling the audio around and synthesizing new matching mouth motions via <a href="https://github.com/Rudrabha/LipGAN">LipGAN</a>, We also include facial landmarks processed from both the real and fake videos, which are input to our video matching function codes. 
 		</p>
 		<ul>
 			<li><a href="https://repository.library.brown.edu/studio/item/bdr:1144738/">Processed landmarks</li>
-			<li><a href="https://repository.library.brown.edu/studio/collections/id_1006/">All data</a>. This contains the real and fake videos from 25 participants.</li>
+			<li><a href="https://repository.library.brown.edu/studio/collections/id_1006/">All data</a>. This contains the real and fake videos from 24 participants.</li>
 		</ul>
 		<p>
-			<em>PLEASE NOTE:</em> These data are for preliminary experiments only and we release them for scientific reproducibility only. While we have captured some diversity in human appearance across our 25 participants, this data is heavily biased. Nobody should expect experimental findings generated with these data to hold across wider populations, and nobody should train a machine learning model on these data and deploy it anywhere.
+			<em>PLEASE NOTE:</em> These data are for preliminary experiments only and we release them for scientific reproducibility only. While we have captured some diversity in human appearance across our 24 participants, this data is heavily biased. Nobody should expect experimental findings generated with these data to hold across wider populations, and nobody should train a machine learning model on these data and deploy it anywhere.
 		</p>
+	  </div>
+
+	  <div class="section">
+		<h3 style="font-family:aaargh">Notes and Errata</h3>
+		
+		<ul>
+			<li>One participant did not wish for their data to be released. Results reported in the main paper are for 25 participants, not 24, and so reproductions of our results will vary slightly.</li>
+			<li>Document issues: These have been fixed in our download PDF; the CVPRW proceedings PDF will still contain these issues.
+			<ul>
+				<li>The Eq.&nbsp;1 definition of the Mahalanobis distance was missing a tranpose after the first parenthetical statement within the sum.</li>
+				<li>In Eq.&nbsp;2, the eigenvector matrix \(E\) is determined through PCA, which operates on the covariance matrix of the data matrix. So, for greater clarify, in the paragraph following Eq.&nbsp;2, we have added the words 'of the covariance matrix' before 'of that same data matrix'.</li>
+				<li>In Section 3.2, we have clarified that the clustering progresses via the minimum distance between leaves in any cluster, rather than any other linkage metric like an average over the cluster.</li>
+			</ul>
+			</li>
+		</ul>
 	  </div>
 
     </br>
