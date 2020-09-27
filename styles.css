@@ -4,10 +4,23 @@
     src: url(fonts/Aaargh.ttf);
 }
 
+@font-face {
+    font-family: Raleway-Light;
+    src: url(fonts/Raleway-Light.ttf);
+}
+
 body {
     color: rgba(100, 100, 100, 1.0);
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-family: "Raleway-Light", Arial, Helvetica, sans-serif;
+}
+
+caption{
+    font-family: "Raleway-Light", Arial, Helvetica, sans-serif;
 }
 
 .title {
@@ -15,7 +28,7 @@ body {
     margin: auto;
     width: 70%;
     padding: 0px;
-    font-family: "aaargh", Arial, Helvetica, sans-serif;
+    font-family: "Raleway-Light", Arial, Helvetica, sans-serif;
     font-size:large;
 }
 
@@ -26,6 +39,7 @@ body {
 }
 
 .author {
+    font-family: "Raleway-Light", Arial, Helvetica, sans-serif;
     font-size:medium;
     width:25%;
     float: left;
@@ -51,9 +65,10 @@ body {
     margin: auto;
     width: 100%;
     padding: 20px 0px 0px 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     text-align:justify;
 }
+
 
 .videocontainer {
     margin: auto;
