@@ -19,7 +19,7 @@ h3 {
     font-family: "Raleway-Light", Arial, Helvetica, sans-serif;
 }
 
-caption{
+figcaption{
     font-family: "Raleway-Light", Arial, Helvetica, sans-serif;
 }
 
@@ -76,6 +76,7 @@ caption{
     padding: 0px;
     text-align:left;
 }
+
 
 .citation {
     margin: auto;
