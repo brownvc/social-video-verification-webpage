@@ -1,0 +1,145 @@
+---
+redirect_from: socialvideoverification/
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Social Video Verification</title>
+  </head>
+
+  <body>
+    <div class="title">
+      <h1>Towards Social Video Verification to Combat Deepfakes<br>via Face Geometry</h1>
+      <h4>Media Forensics Workshop @ CVPR 2020</h4>
+
+      <div class="author-container">
+	<div class="author">
+	  <a href="https://tursmanor.github.io/">Eleanor Tursman</a></br>
+	  Brown University
+	</div>
+	
+	<div class="author">
+	  <a href="https://cs.brown.edu/people/grad/mgeorge5/">Marilyn George</a></br>
+	  Brown University
+	</div>
+
+	<div class="author">
+	<a href="http://cs.brown.edu/~seny/">Seny Kamara</a></br>
+	Brown University
+	</div>
+
+	<div class="author">
+	  <a href="http://www.jamestompkin.com">James Tompkin</a></br>
+	  Brown University
+	</div>
+
+    <div class="icon-container">
+      <div class="icon">
+	<a href="./cvprw2020/CVPRW2020_Tursman_SocialVideoVerification.pdf"><img src="./images/pdf-logo.png" onmouseover="this.src='./images/pdf-logo-over.png'" onmouseout="this.src='./images/pdf-logo.png'"/></a><br>4 MB
+      </div>
+      <div class="icon">
+	<a href="https://github.com/brownvc/social-video-verification"><img src="./images/github-logo.png" onmouseover="this.src='./images/github-logo-over.png'" onmouseout="this.src='./images/github-logo.png'"/></a><br>MATLAB
+	  </div>
+	  <div class="icon">
+		<a href="https://github.com/brownvc/social-video-verification-hackathon"><img src="./images/github-logo.png" onmouseover="this.src='./images/github-logo-over.png'" onmouseout="this.src='./images/github-logo.png'"/></a><br>Python
+	  </div>
+      <div class="icon">
+	<a href="#video"><img src="./images/video-logo.png" onmouseover="this.src='./images/video-logo-over.png'" onmouseout="this.src='./images/video-logo.png'"/></a>
+      </div>
+    </div>
+    
+
+	<div class="section">
+		<div style="text-align:center">
+	  	<img src="images/main-fig.svg">
+	  	<caption style="font-family:aaargh">Using multiple simultaneous captures to help verify the truth of an event.</caption>
+		</div>
+	</div>
+
+    
+    <div class="section">
+	  <h3 style="font-family:aaargh">Abstract</h3>
+	  <p>
+	  Deepfakes can spread misinformation, defamation, and propaganda by faking videos of public speakers. We assume that future deepfakes will be visually indistinguishable from real video, and will also fool current deepfake detection methods. As such, we posit a social verification system that instead validates the truth of an event via a set of videos. To confirm which, if any, videos are being faked at any point in time, we check for consistent facial geometry across videos. We demonstrate that by comparing mouth movement across views using a combination of PCA and hierarchical clustering, we can detect a deepfake with subtle mouth manipulations out of a set of six videos at high accuracy. Using our new multi-view dataset of 25 speakers, we show that our performance gracefully decays as we increase the number of identically faked videos from different input views.
+	  </p>
+    </div>
+
+    <div class="videocontainer">
+	  <a name="video"></a>
+      <h3 style="font-family:aaargh">Video + Slides Presentation</h3>
+	  <iframe width="100%" height="41%" src="https://www.youtube-nocookie.com/embed/b6gPMMjfRWA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  <br>
+	  <p>
+		  <b>Download:</b> <a href="./cvprw2020/CVPRW2020_Tursman_SocialVideoVerification.mp4">MP4 (17MB)</a>
+	  </p>
+
+	  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQnQCp5DmqfyCQ6V8xkqDC32Zhj69Qq_n0A6QuxBlxlb6Tv3QP92v9Xj563icRVwG4yAmtmwdb3puSM/embed?start=false&loop=false&delayms=5000" frameborder="0" width="100%" height="41%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+	  <br>
+	  <p>
+		  <b>Download:</b> <a href="./cvprw2020/CVPRW2020_Tursman_SocialVideoVerification.pptx">MP4 (15MB)</a>
+	  </p>
+	  
+    </div>
+      
+
+    <div class="citation">
+		<h3 style="font-family:aaargh">Citation</h3>
+		<div style="background-color:rgba(230, 230, 230, 1.0); padding:20px">
+	  @InProceedings{Tursman_2020_CVPRW, </br>
+	  <div style="margin-left: 40px">
+		  author = {Tursman, Eleanor and George, Marilyn and Kamara, Seny and Tompkin, James},<br>
+		  title = {Towards Untrusted Social Video Verification to Combat Deepfakes via Face Geometry Consistency},<br>
+		  booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},<br>
+		  month = {June},<br>
+		  year = {2020}<br>
+		  </div>
+	  }</br>
+		</div>
+	  </div>
+
+    <div class="section">
+	  <h3 style="font-family:aaargh">Code</h3>
+	  <p>
+	  	We have two repositories:
+	  </p>
+	  <ul>
+		  <li><a href="https://github.com/brownvc/social-video-verification-hackathon">Github repo</a> for a Python implementation of the core method. This was setup for a hackathon: the facial landmarks have been pre-extracted from videos as this step used an expensive preprocess.</li>
+		  <li><a href="https://github.com/brownvc/social-video-verification">Github repo</a> for a MATLAB implementation of the core method, plus all pre-processing code for the input videos and fake video generation.</li>
+	  </ul>
+    </div>
+
+	<div class="section">
+		<h3 style="font-family:aaargh">Data</h3>
+		
+		<div style="text-align:center;padding:1em 0em 1em 0em">
+			<img src="./images/data-setup.png" width="90%"><br>
+			<caption style="font-family:aaargh">Our data capture setup with example output multi-view frames.</caption>
+		</div>
+		
+		<p><b>Download:</b> <a href="https://repository.library.brown.edu/studio/collections/id_1006/">Here from Brown University's library</a>.</p>
+
+		<p>
+			We have captured 25 participants speaking arbitrary sentences from 6 time-synchronized DSLR cameras. Then, these input videos were turned into a set of deep fakes by shuffling the audio around and synthesizing new matching mouth motions via <a href="https://github.com/Rudrabha/LipGAN">LipGAN</a>, We also include facial landmarks processed from both the real and fake videos, which are input to our video matching function codes. 
+		</p>
+		<ul>
+			<li><a href="https://repository.library.brown.edu/studio/item/bdr:1144738/">Processed landmarks</li>
+			<li><a href="https://repository.library.brown.edu/studio/collections/id_1006/">All data</a>. This contains the real and fake videos from 25 participants.</li>
+		</ul>
+		<p>
+			<em>PLEASE NOTE:</em> These data are for preliminary experiments only and we release them for scientific reproducibility only. While we have captured some diversity in human appearance across our 25 participants, this data is heavily biased. Nobody should expect experimental findings generated with these data to hold across wider populations, and nobody should train a machine learning model on these data and deploy it anywhere.
+		</p>
+	  </div>
+
+    </br>
+    </br>
+    </br>
+    
+  </body>
+
+</html>
